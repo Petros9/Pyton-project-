@@ -106,8 +106,8 @@ def main():
                         manfred.change_squat_state()
                     else:
                         ay = -TMP_JUMP_HEIGHT
-                        manfred.is_jumping = True
-                if(event.key == pygame.K_DOWN):
+                        manfred.jumping = True
+                if(event.key == pygame.K_DOWN and not manfred.jumping):
                     manfred.change_squat_state()
                 if(event.key == pygame.K_SPACE and not manfred.squat):
                     manfred.shoot()

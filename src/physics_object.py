@@ -23,6 +23,7 @@ class PhysicsObject:
         self.position = position
         self.velocity = Point(0, 0) if (velocity is None) else velocity
         self.world = world if (world is not None) else None
+        self.jumping = False
 
     def accelerate(self, ax, ay):
         """ Method changes the velocity of the object.
@@ -95,6 +96,7 @@ class PhysicsObject:
             print(f"FLOOR {self.position } --> {map_object.position}")
             self.position.y = map_object.position.y - UNIT
             self.velocity.y = 0
+            self.jumping = False
 
         self.position.x = int(self.position.x)
         self.position.y = int(self.position.y)
