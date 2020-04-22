@@ -1,11 +1,12 @@
 from src.basic.point import Point
+
 GRAVITY = 1
 
 # The value of air resistance is set, so that going through platform is
 # impossible. Do not change it!
 AIR_RESISTANCE = 5
 FRICTION = 0.8
-MOVEMENT_RESISTANCE_X = 1
+MOVEMENT_RESISTANCE_X = 1.5
 MOVEMENT_RESISTANCE_y = 1
 UNIT = 10
 
@@ -91,12 +92,15 @@ class PhysicsObject:
         # (y axis is upside down in most of graphing libraries)
         vec = Point(self.position.x, self.position.y + 0.3 * UNIT)
         vec = center(vec)
+
         map_object = self.world.object_at(vec)
+
         if (self.velocity.y and map_object is not None):
             print(f"FLOOR {self.position } --> {map_object.position}")
             self.position.y = map_object.position.y - UNIT
             self.velocity.y = 0
             self.jumping = False
+
 
         self.position.x = int(self.position.x)
         self.position.y = int(self.position.y)

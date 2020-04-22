@@ -9,19 +9,11 @@ class Hero(PhysicsObject):
         self.spawn = Spawn()
         super().__init__(self.spawn.position)
         self.position = self.spawn.position
-        self.health = 10
+        self.health = 3
         self.direct = Direction.RIGHT
         self.level = level
         self.assign_world(level)
         self.squat = False
-
-    def move_position(self, dx, dy):
-        new_position = self.position + Point(int(dx), int(dy))
-        if (self.can_move_to(new_position)):
-            self.position = new_position
-
-    def can_move_to(self, point):
-        return self.level.object_at(point) is False
 
     def left_direction(self):
         self.direct = Direction.LEFT
@@ -33,7 +25,7 @@ class Hero(PhysicsObject):
         return self.direct == Direction.RIGHT
 
     def take_hit(self):
-        self.health -= 2
+        self.health -= 1
 
     def change_squat_state(self):
         self.squat = not self.squat
@@ -44,4 +36,7 @@ class Hero(PhysicsObject):
         else:
             self.level.shoot(self.position.x-6, self.position.y, -3)
 
+    def die(self):
+        self.health = 3
+        self.position = self.spawn.position
 

@@ -17,20 +17,20 @@ class Level:
     # '' trzeba zrobić, by wrogowie nie spadali z platform
 
     def object_at(self, point):
-
         if ((point.x, point.y) in self.level_objects):
             map_object = self.level_objects.get((point.x, point.y))
 
             if (isinstance(map_object, Flag)):
-                self.hero.spawn.change_spawn(point.x, point.y)
-                map_object.capture()
+                if(not map_object.captured):
+                    self.hero.spawn.change_spawn(point.x, point.y)
+                    map_object.capture()
                 return None
             elif (isinstance(map_object, Foe)):
                 self.hero.take_hit()
-            #zastanawia mnie zasadnosc
             return map_object
         else:
             return None
+
 
     def place_objects(self, objects):
         for object in objects:

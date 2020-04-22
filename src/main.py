@@ -62,33 +62,28 @@ def main():
     pygame.mixer.init()
 
     pygame.mixer.music.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\sound\theme.wav")
-    pygame.mixer.music.play(-1)
-
     baron_shoot_sound = pygame.mixer.Sound(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\sound\baron_shoot.wav")
+    pygame.mixer.music.play(-1)
 
     screen_size = (920, 520)
     screen = pygame.display.set_mode(screen_size)
 
     game_intro(screen)
-
     object_list = LevelLoader("../Resources/test").load_level()
-
     first_level = Level(object_list)
-
     manfred = Hero(first_level)
+    first_level.hero = manfred
 
     baron_r_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_r.png")
     baron_l_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_l.png")
     baron_l_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_l_squat.png")
     baron_r_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_r_squat.png")
-
     platform_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\platforma.png")
-
     foe_flag_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\foe_flag.png")
     baron_flag_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_flag.png")
     bullet_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\patron.png")
-
     foe_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\foe.png")
+    heart_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\heart.png")
 
 
     ax = 0
@@ -124,6 +119,8 @@ def main():
                 if(event.key == pygame.K_ESCAPE):
                     pygame.quit()
                     quit()
+                if(event.key == pygame.K_0):
+                    manfred.die()
 
 
         screen.fill((0, 0, 0))
@@ -161,6 +158,10 @@ def main():
             else:
                 screen.blit(baron_l_img, baron_pos)
 
+        times = manfred.health
+        while(times > 0):
+            screen.blit(heart_img, (times*45, 40))
+            times -= 1
 
         #print(manfred.position)
         print(manfred.position)
