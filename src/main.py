@@ -59,6 +59,11 @@ def game_intro(screen):
 def main():
     pygame.init()
 
+    pygame.mixer.init()
+
+    pygame.mixer.music.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\sound\theme.wav")
+    pygame.mixer.music.play(-1)
+
     screen_size = (920, 520)
     screen = pygame.display.set_mode(screen_size)
 
@@ -83,8 +88,10 @@ def main():
 
     foe_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\foe.png")
 
+
     ax = 0
     while (True):
+
         ay = 0
         for event in pygame.event.get():
             if (event.type == pygame.KEYUP):
