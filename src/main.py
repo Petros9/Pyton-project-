@@ -10,6 +10,7 @@ from world_elements.platform import Platform
 from world_elements.foe import Foe
 from world_elements.flag import Flag
 from world_elements.tower import Tower
+from world_elements.bridge import Bridge
 
 TMP_JUMP_HEIGHT = 10
 TMP_HERO_HORIZONTAL_STEP = 1
@@ -80,6 +81,7 @@ def main():
     baron_l_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_l_squat.png")
     baron_r_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_r_squat.png")
     platform_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\platforma.png")
+    bridge_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\bridge.png")
     foe_flag_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\foe_flag.png")
     baron_flag_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_flag.png")
     bullet_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\patron.png")
@@ -139,6 +141,8 @@ def main():
                 img = foe_img
             elif (isinstance(object, Tower)):
                 img = tower_img
+            elif (isinstance(object, Bridge)):
+                img = bridge_img
             screen.blit(img, (object.position_on_screen(int(manfred.position.x))*4+40, int(object.position.y)*4-20))
 
         for bullet in first_level.bullets_list:
@@ -149,6 +153,9 @@ def main():
 
         manfred.accelerate(ax, ay)
         manfred.update()
+
+        if(manfred.position.y >= 210):
+            manfred.die()
 
         baron_pos = (160, int(manfred.position.y)*4 - 20)
 

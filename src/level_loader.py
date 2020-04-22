@@ -2,6 +2,7 @@ from world_elements.platform import Platform
 from world_elements.flag import Flag
 from world_elements.foe import Foe
 from world_elements.tower import Tower
+from world_elements.bridge import Bridge
 
 class LevelLoader:
     def __init__(self, filename):
@@ -21,6 +22,8 @@ class LevelLoader:
                             level_objects += [Foe(5 * j + 5, 10 * i + 5)]
                         if (line[j] == '^'):
                             level_objects += [Tower(5 * j + 5, 10 * i + 5)]
+                        if (line[j] == '&'):
+                            level_objects += [Bridge(5 * j + 5, 10 * i + 5)]
 
         except IOError as er:
             print(f"I/O error: {er.strerror}")
