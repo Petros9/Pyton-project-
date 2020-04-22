@@ -9,6 +9,7 @@ from world_elements.hero import Hero
 from world_elements.platform import Platform
 from world_elements.foe import Foe
 from world_elements.flag import Flag
+from world_elements.tower import Tower
 
 TMP_JUMP_HEIGHT = 10
 TMP_HERO_HORIZONTAL_STEP = 1
@@ -84,6 +85,7 @@ def main():
     bullet_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\patron.png")
     foe_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\foe.png")
     heart_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\heart.png")
+    tower_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\tower.png")
 
 
     ax = 0
@@ -135,11 +137,14 @@ def main():
                     img = baron_flag_img
             elif(isinstance(object, Foe)):
                 img = foe_img
+            elif (isinstance(object, Tower)):
+                img = tower_img
             screen.blit(img, (object.position_on_screen(int(manfred.position.x))*4+40, int(object.position.y)*4-20))
 
         for bullet in first_level.bullets_list:
             screen.blit(bullet_img, (int(bullet.position_on_screen(manfred.position.x)*4+40), int(bullet.position.y)*4-20))
 
+        first_level.shoot_towers()
         first_level.move_bullets()
 
         manfred.accelerate(ax, ay)
@@ -162,9 +167,8 @@ def main():
         while(times > 0):
             screen.blit(heart_img, (times*45, 40))
             times -= 1
-
+        print(len(first_level.tower_list))
         #print(manfred.position)
-        print(manfred.position)
         pygame.display.flip()
         time.sleep(0.08)
 

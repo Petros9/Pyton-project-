@@ -32,9 +32,9 @@ class Hero(PhysicsObject):
 
     def shoot(self):
         if(self.is_in_right_direction()):
-            self.level.shoot(self.position.x+6, self.position.y, 3)
+            self.level.shoot(self.position.x+6, self.position.y, 3, 0)
         else:
-            self.level.shoot(self.position.x-6, self.position.y, -3)
+            self.level.shoot(self.position.x-6, self.position.y, -3, 0)
 
     def die(self):
         self.health = 3
