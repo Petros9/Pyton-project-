@@ -137,8 +137,8 @@ def main():
             screen.blit(baron_l_img, baron_pos)
 
 
-        #print(first_level.hero.spawn.position)
-
+        #print(manfred.position)
+        print(manfred.position)
         pygame.display.flip()
         time.sleep(0.08)
 

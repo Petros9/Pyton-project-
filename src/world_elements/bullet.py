@@ -16,7 +16,7 @@ class Bullet(PhysicsObject):
         self.y_direction = y_direction
 
     def move(self):
-            self.position += Point(self.speed, self.y_direction)
+        self.position += Point(self.speed, self.y_direction)
 
     def position_on_screen(self, hero_position):
         return self.position.x - hero_position + 30

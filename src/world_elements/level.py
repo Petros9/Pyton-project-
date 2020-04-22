@@ -20,7 +20,6 @@ class Level:
         if ((point.x, point.y) in self.level_objects):
             map_object = self.level_objects.get((point.x, point.y))
 
-
             if (isinstance(map_object, Flag)):
                 self.hero.spawn.change_spawn(point.x, point.y)
                 map_object.capture()
@@ -28,12 +27,6 @@ class Level:
             elif (isinstance(map_object, Foe)):
                 self.hero.take_hit()
             #zastanawia mnie zasadnosc
-            elif (isinstance(map_object, Bullet)):
-                if(not self.hero.squat):
-                    self.hero.take_hit()
-                    del self.level_objects[map_object]
-                    del self.bullet_list[map_object]
-                return None
             return map_object
         else:
             return None
@@ -53,16 +46,17 @@ class Level:
         for bullet in self.bullets_list:
             bullet.move()
             if(bullet.position.__eq__(self.hero.position)):
-                self.hero.take_hit()
-                del self.bullet_list[bullet]
+                if(not self.hero.squat):
+                    #self.hero.take_hit()
+                    self.bullets_list.remove(bullet)
             else:
                 map_object = self.object_at(bullet.position)
                 if(isinstance(map_object, Foe)):
-                    map_object.take_hi()
-                    del self.bullet_list.[bullet]
+                    #map_object.take_hit()
+                    self.bullets_list.remove(bullet)
                 elif(isinstance(map_object, Platform)):
-                    print("oap")
-                    del self.bullet_list[bullet]
+                    self.bullets_list.remove(bullet)
+                    print("opa")
 
     def move_foes(self):
         for foe in self.foes_list:

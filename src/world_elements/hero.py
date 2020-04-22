@@ -14,10 +14,9 @@ class Hero(PhysicsObject):
         self.level = level
         self.assign_world(level)
         self.squat = False
-        self.shooting = False
 
     def move_position(self, dx, dy):
-        new_position = self.position + Point(dx, dy)
+        new_position = self.position + Point(int(dx), int(dy))
         if (self.can_move_to(new_position)):
             self.position = new_position
 
