@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b7a295-8dd5-4c23-8798-7226d11cbf4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/test" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/physics_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics_object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/hero.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/world_elements/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/tower.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/tower.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -96,22 +94,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586608984765" />
-    <state width="1259" height="116" key="GridCell.Tab.0.bottom" timestamp="1587569194414">
+    <state width="1259" height="75" key="GridCell.Tab.0.bottom" timestamp="1587576537630">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="116" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587569194414" />
-    <state width="1259" height="116" key="GridCell.Tab.0.center" timestamp="1587569194414">
+    <state width="1259" height="75" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587576537630" />
+    <state width="1259" height="75" key="GridCell.Tab.0.center" timestamp="1587576537630">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="116" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587569194414" />
-    <state width="1259" height="116" key="GridCell.Tab.0.left" timestamp="1587569194414">
+    <state width="1259" height="75" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587576537630" />
+    <state width="1259" height="75" key="GridCell.Tab.0.left" timestamp="1587576537630">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="116" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587569194414" />
-    <state width="1259" height="116" key="GridCell.Tab.0.right" timestamp="1587569194414">
+    <state width="1259" height="75" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587576537630" />
+    <state width="1259" height="75" key="GridCell.Tab.0.right" timestamp="1587576537630">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="116" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587569194414" />
+    <state width="1259" height="75" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587576537630" />
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1587570643846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587570643846" />
+    <state width="1259" height="204" key="GridCell.Tab.1.center" timestamp="1587570643846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1587570643846" />
+    <state width="1259" height="204" key="GridCell.Tab.1.left" timestamp="1587570643846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1587570643846" />
+    <state width="1259" height="204" key="GridCell.Tab.1.right" timestamp="1587570643846">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1587570643846" />
+    <state x="402" y="52" key="RollbackChangesDialog" timestamp="1587570297001">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="402" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587570297001" />
     <state x="39" y="0" width="1173" height="680" key="SettingsEditor" timestamp="1586534635022">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

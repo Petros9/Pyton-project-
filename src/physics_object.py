@@ -5,7 +5,7 @@ GRAVITY = 1
 # impossible. Do not change it!
 AIR_RESISTANCE = 5
 FRICTION = 0.8
-MOVEMENT_RESISTANCE_X = 1.5
+MOVEMENT_RESISTANCE_X = 1
 MOVEMENT_RESISTANCE_y = 1
 UNIT = 10
 
@@ -95,6 +95,9 @@ class PhysicsObject:
             print(f"FLOOR {self.position } --> {map_object.position}")
             self.position.y = map_object.position.y - UNIT
             self.velocity.y = 0
+
+        self.position.x = int(self.position.x)
+        self.position.y = int(self.position.y)
             
     def update(self):
         """ Method updates physical status of the object.

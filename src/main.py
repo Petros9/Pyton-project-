@@ -72,7 +72,8 @@ def main():
 
     baron_r_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_r.png")
     baron_l_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_l.png")
-
+    baron_l_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_l_squat.png")
+    baron_r_squat_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\baron_r_squat.png")
 
     platform_img = pygame.image.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\img\basic\platforma.png")
 
@@ -92,18 +93,23 @@ def main():
                 sys.exit(0)
             elif (event.type == pygame.KEYDOWN):
 
-                if (event.key == pygame.K_RIGHT):
+                if (event.key == pygame.K_RIGHT and not manfred.squat):
                     ax = TMP_HERO_HORIZONTAL_STEP
                     manfred.right_direction()
 
-                if (event.key == pygame.K_LEFT):
+                if (event.key == pygame.K_LEFT and not manfred.squat):
                     ax = -TMP_HERO_HORIZONTAL_STEP
                     manfred.left_direction()
 
                 if (event.key == pygame.K_UP):
-                    ay = -TMP_JUMP_HEIGHT
-                    manfred.is_jumping = True
-                if(event.key == pygame.K_SPACE):
+                    if(manfred.squat):
+                        manfred.change_squat_state()
+                    else:
+                        ay = -TMP_JUMP_HEIGHT
+                        manfred.is_jumping = True
+                if(event.key == pygame.K_DOWN):
+                    manfred.change_squat_state()
+                if(event.key == pygame.K_SPACE and not manfred.squat):
                     manfred.shoot()
 
 
@@ -132,9 +138,15 @@ def main():
         baron_pos = (160, int(manfred.position.y)*4 - 20)
 
         if (manfred.is_in_right_direction()):
-            screen.blit(baron_r_img, baron_pos)
+            if(manfred.squat):
+                screen.blit(baron_r_squat_img, baron_pos)
+            else:
+                screen.blit(baron_r_img, baron_pos)
         else:
-            screen.blit(baron_l_img, baron_pos)
+            if(manfred.squat):
+                screen.blit(baron_l_squat_img, baron_pos)
+            else:
+                screen.blit(baron_l_img, baron_pos)
 
 
         #print(manfred.position)

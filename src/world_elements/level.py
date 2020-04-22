@@ -17,6 +17,7 @@ class Level:
     # '' trzeba zrobić, by wrogowie nie spadali z platform
 
     def object_at(self, point):
+
         if ((point.x, point.y) in self.level_objects):
             map_object = self.level_objects.get((point.x, point.y))
 
@@ -46,17 +47,19 @@ class Level:
         for bullet in self.bullets_list:
             bullet.move()
             if(bullet.position.__eq__(self.hero.position)):
+
                 if(not self.hero.squat):
-                    #self.hero.take_hit()
+                    self.hero.take_hit()
                     self.bullets_list.remove(bullet)
             else:
                 map_object = self.object_at(bullet.position)
+
                 if(isinstance(map_object, Foe)):
-                    #map_object.take_hit()
+                    map_object.take_hit()
                     self.bullets_list.remove(bullet)
+
                 elif(isinstance(map_object, Platform)):
                     self.bullets_list.remove(bullet)
-                    print("opa")
 
     def move_foes(self):
         for foe in self.foes_list:
