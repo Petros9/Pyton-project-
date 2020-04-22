@@ -64,6 +64,8 @@ def main():
     pygame.mixer.music.load(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\sound\theme.wav")
     pygame.mixer.music.play(-1)
 
+    baron_shoot_sound = pygame.mixer.Sound(r"C:\Users\Svatopluk\PycharmProjects\Python-project--master\sound\baron_shoot.wav")
+
     screen_size = (920, 520)
     screen = pygame.display.set_mode(screen_size)
 
@@ -117,6 +119,7 @@ def main():
                 if(event.key == pygame.K_DOWN and not manfred.jumping):
                     manfred.change_squat_state()
                 if(event.key == pygame.K_SPACE and not manfred.squat):
+                    baron_shoot_sound.play()
                     manfred.shoot()
 
 
