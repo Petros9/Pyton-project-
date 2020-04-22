@@ -121,6 +121,9 @@ def main():
                 if(event.key == pygame.K_SPACE and not manfred.squat):
                     baron_shoot_sound.play()
                     manfred.shoot()
+                if(event.key == pygame.K_ESCAPE):
+                    pygame.quit()
+                    quit()
 
 
         screen.fill((0, 0, 0))
