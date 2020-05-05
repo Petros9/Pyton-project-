@@ -2,11 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b7a295-8dd5-4c23-8798-7226d11cbf4e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/world_elements/bridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python-project--master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-project--master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Resources/test" beforeDir="false" afterPath="$PROJECT_DIR$/Resources/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/baron_flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/baron_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/baron_l_squat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/baron_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/baron_r_squat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/bridge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/foe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/foe_flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/patron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/platforma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/basic/tower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/baron_shoot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/foe_shoot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sound/theme.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/direction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/direction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/level_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/level_loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/physics_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/bridge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/bullet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/flag.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/flag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/foe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/foe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/hero.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/level.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/platform.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/platform.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/spawn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/spawn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/world_elements/tower.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/tower.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +51,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1aM67ndsOfdGiU1HpVbDoY3wyK4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="Contra" type="PythonConfigurationType" factoryName="Python">
@@ -94,22 +123,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586608984765" />
-    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1587594892168">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1588700213920">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587594892168" />
-    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1587594892167">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1588700213920">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587594892167" />
-    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1587594892167">
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1588700213920">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587594892167" />
-    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1587594892168">
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1588700213920">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587594892168" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1587570643846">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -130,21 +159,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="402" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587570297001" />
-    <state x="39" y="0" width="1173" height="680" key="SettingsEditor" timestamp="1586534635022">
+    <state x="39" y="0" width="1173" height="680" key="SettingsEditor" timestamp="1588533236942">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="39" y="0" width="1173" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586534635022" />
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587582115270">
+    <state x="39" y="0" width="1173" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588533236942" />
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588701941168">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1587582115270" />
+    <state x="450" y="258" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1588701941168" />
     <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1587555788277">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1587555788277" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1587591784893">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588693732163">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587591784893" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588693732163" />
   </component>
 </project>
