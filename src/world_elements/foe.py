@@ -48,7 +48,8 @@ class Foe(Character):
                 return self.position.x - hero_position.x > FOE_RANGE
 
     def update(self):
+        old_position = bs.Point.from_tuple(self.position.tuple())
         super().update()
-        return self.position
+        return self.position - old_position
 
 
