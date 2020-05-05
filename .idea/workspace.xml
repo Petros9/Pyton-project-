@@ -2,40 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91b7a295-8dd5-4c23-8798-7226d11cbf4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-project--master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-project--master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/baron_flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/baron_l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/baron_l_squat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/baron_r.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/baron_r_squat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/bridge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/foe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/foe_flag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/patron.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/platforma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/basic/tower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/baron_shoot.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/foe_shoot.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sound/theme.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/direction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/direction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/point.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/point.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/level_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/level_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/physics_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/physics_object.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/bridge.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/bridge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/bullet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/flag.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/flag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/foe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/foe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/hero.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/hero.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/level.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/level.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/platform.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/platform.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/spawn.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/spawn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/world_elements/tower.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/world_elements/tower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/baron_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/baron_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/flaga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/foe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/foe_flag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/patron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/platforma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/basic/title.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,22 +97,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586608984765" />
-    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1588700213920">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom" timestamp="1588704333890">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
-    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1588700213920">
+    <state width="1259" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588704333890" />
+    <state width="1259" height="2" key="GridCell.Tab.0.center" timestamp="1588704333890">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
-    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1588700213920">
+    <state width="1259" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588704333890" />
+    <state width="1259" height="2" key="GridCell.Tab.0.left" timestamp="1588704333890">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
-    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1588700213920">
+    <state width="1259" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588704333890" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right" timestamp="1588704333890">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588700213920" />
+    <state width="1259" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588704333890" />
     <state width="1259" height="204" key="GridCell.Tab.1.bottom" timestamp="1587570643846">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
